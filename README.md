@@ -14,8 +14,8 @@
 <br>
 
 <p align="center">
-  <img alt="Menu app first screen" src="https://github.com/JSertoli/Menu-App/assets/122844779/8efd53c5-6136-4eba-9139-55fc3ac70146" width="20%">
-  <img alt="Menu app second screen" src="https://github.com/JSertoli/Menu-App/assets/122844779/8efd53c5-6136-4eba-9139-55fc3ac70146" width="20%">
+  <img alt="Menu app first screen" src="https://github.com/JSertoli/Menu-App/assets/122844779/5dbd02da-2975-4889-b542-8d8534c4d5b0" width="25%">
+  <img alt="Menu app second screen" src="https://github.com/JSertoli/Menu-App/assets/122844779/8efd53c5-6136-4eba-9139-55fc3ac70146" width="25%">
 </p>
 
 ## 🚀 Tecnologias
