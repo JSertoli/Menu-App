@@ -14,8 +14,8 @@
 <br>
 
 <p align="center">
-  <img alt="projeto LinkTree" src="[.github/preview.png](https://github.com/JSertoli/Menu-App/assets/122844779/8efd53c5-6136-4eba-9139-55fc3ac70146)" width="100%">
-  <img alt="projeto LinkTree" src="https://github.com/JSertoli/Menu-App/assets/122844779/8efd53c5-6136-4eba-9139-55fc3ac70146" width="100%">
+  <img alt="Menu app first screen" src="https://github.com/JSertoli/Menu-App/assets/122844779/8efd53c5-6136-4eba-9139-55fc3ac70146" width="20%">
+  <img alt="Menu app second screen" src="https://github.com/JSertoli/Menu-App/assets/122844779/8efd53c5-6136-4eba-9139-55fc3ac70146" width="20%">
 </p>
 
 ## 🚀 Tecnologias
