@@ -1,6 +1,7 @@
-import { View, Text, ScrollView, Alert } from "react-native";
+import { View, Text, ScrollView, Alert, Linking } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
+import { useNavigation } from "expo-router";
 import { Header } from "@/components/header";
 import { ProductCartProps, useCartStore } from "@/stores/cart-store";
 import { Product } from "@/components/product"
@@ -11,9 +12,12 @@ import { Feather } from "@expo/vector-icons";
 import { LinkButton } from "@/components/link-button";
 import { useState } from "react";
 
+const PHONE_NUMBER = "5554996982787"
+
 export default function Cart() {
     const [address, setAddress] = useState("")
     const cartStore = useCartStore();
+    const navigation = useNavigation();
 
     const total = formatCurrency(cartStore.products.reduce((total, product) => total + product.price * product.quantity, 0));
 
@@ -32,6 +36,13 @@ export default function Cart() {
         }
 
         const products = cartStore.products.map((product) => `\n ${product.quantity} ${product.title} - ${formatCurrency(product.price * product.quantity)}`).join("")
+
+        const message = `🍔 *Novo Pedido*: ${products} \n\n *Total:* ${total} \n\n *Endereço:* ${address}`
+
+        Linking.openURL(`http://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=${message}`)
+
+        cartStore.clear()
+        navigation.goBack()
     }
 
     return (
@@ -57,7 +68,7 @@ export default function Cart() {
                             <Text className="text-lime-400 text-2xl font-heading"> {total} </Text>
                         </View>
 
-                        <Input placeholder="Informe o endereço de entrega com rua, bairro, CEP e complemento" onChangeText={setAddress} />
+                        <Input placeholder="Informe o endereço de entrega com rua, bairro, CEP e complemento" onChangeText={setAddress} blurOnSubmit={true} onSubmitEditing={handleOrder} returnKeyType="next" />
                     </View>
                 </ScrollView>
             </KeyboardAwareScrollView>
