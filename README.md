@@ -1,4 +1,4 @@
-<h1 align="center"> Link Tree </h1>
+<h1 align="center"> Menu App </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
